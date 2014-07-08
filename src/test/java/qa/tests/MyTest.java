@@ -42,8 +42,8 @@ public class MyTest implements ITest
                 testCase = testParams.getTestName();
             }
         }
-        this.mTestCaseName = String.format( "%s(%s)", method.getName(), testCase );
-        //this.mTestCaseName = testCase;
+        //this.mTestCaseName = String.format( "%s(%s)", method.getName(), testCase );
+        this.mTestCaseName = String.format( "%s", testCase );
     }
 
     @Override
