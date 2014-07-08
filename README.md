@@ -14,3 +14,10 @@ Test Results
 Test results are found in the target directory at:
    target/surefire-reports/custom-report.html
    
+StackOverflow Question
+================
+
+I asked how to solve this on StackOverflow right here:
+  http://stackoverflow.com/questions/24642711
+  
+   
