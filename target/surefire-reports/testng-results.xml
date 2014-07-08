@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="11" passed="11">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Main Test Suite" duration-ms="22" started-at="2014-07-08T17:55:55Z" finished-at="2014-07-08T17:55:56Z">
+    <groups>
+    </groups>
+    <test name="Main Test Group" duration-ms="22" started-at="2014-07-08T17:55:55Z" finished-at="2014-07-08T17:55:56Z">
+      <class name="qa.tests.MyTest">
+        <test-method status="PASS" signature="testData(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:qa.tests.MyTest@35851384]" test-instance-name="testSample3()" name="testData" is-config="true" duration-ms="5" started-at="2014-07-08T10:55:56Z" finished-at="2014-07-08T10:55:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void qa.tests.MyTest.testSample1(qa.test.TestParameters)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@6cd8737]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testData -->
+        <test-method status="PASS" signature="testData(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:qa.tests.MyTest@35851384]" test-instance-name="testSample3()" name="testData" is-config="true" duration-ms="1" started-at="2014-07-08T10:55:56Z" finished-at="2014-07-08T10:55:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void qa.tests.MyTest.testSample1(qa.test.TestParameters)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@22f71333]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testData -->
+        <test-method status="PASS" signature="testSample1(qa.test.TestParameters)[pri:0, instance:qa.tests.MyTest@35851384]" test-instance-name="testSample3()" name="testSample1" duration-ms="0" started-at="2014-07-08T10:55:56Z" data-provider="BasicDataProvider" finished-at="2014-07-08T10:55:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[qa.test.TestParameters@3f3afe78]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSample1 -->
+        <test-method status="PASS" signature="testSample1(qa.test.TestParameters)[pri:0, instance:qa.tests.MyTest@35851384]" test-instance-name="testSample3()" name="testSample1" duration-ms="0" started-at="2014-07-08T10:55:56Z" data-provider="BasicDataProvider" finished-at="2014-07-08T10:55:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[qa.test.TestParameters@7f63425a]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSample1 -->
+        <test-method status="PASS" signature="testData(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:qa.tests.MyTest@35851384]" test-instance-name="testSample3()" name="testData" is-config="true" duration-ms="0" started-at="2014-07-08T10:55:56Z" finished-at="2014-07-08T10:55:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void qa.tests.MyTest.testSample1(qa.test.TestParameters)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@3498ed]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testData -->
+        <test-method status="PASS" signature="testData(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:qa.tests.MyTest@35851384]" test-instance-name="testSample3()" name="testData" is-config="true" duration-ms="0" started-at="2014-07-08T10:55:56Z" finished-at="2014-07-08T10:55:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void qa.tests.MyTest.testSample1(qa.test.TestParameters)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@1a407d53]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testData -->
+        <test-method status="PASS" signature="testSample1(qa.test.TestParameters)[pri:0, instance:qa.tests.MyTest@35851384]" test-instance-name="testSample3()" name="testSample1" duration-ms="0" started-at="2014-07-08T10:55:56Z" data-provider="BasicDataProvider" finished-at="2014-07-08T10:55:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[qa.test.TestParameters@511baa65]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSample1 -->
+        <test-method status="PASS" signature="testSample1(qa.test.TestParameters)[pri:0, instance:qa.tests.MyTest@35851384]" test-instance-name="testSample3()" name="testSample1" duration-ms="0" started-at="2014-07-08T10:55:56Z" data-provider="BasicDataProvider" finished-at="2014-07-08T10:55:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[qa.test.TestParameters@39ba5a14]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSample1 -->
+        <test-method status="PASS" signature="testSample1(qa.test.TestParameters)[pri:0, instance:qa.tests.MyTest@35851384]" test-instance-name="testSample3()" name="testSample1" duration-ms="0" started-at="2014-07-08T10:55:56Z" data-provider="BasicDataProvider" finished-at="2014-07-08T10:55:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[qa.test.TestParameters@36d64342]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSample1 -->
+        <test-method status="PASS" signature="testData(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:qa.tests.MyTest@35851384]" test-instance-name="testSample3()" name="testData" is-config="true" duration-ms="0" started-at="2014-07-08T10:55:56Z" finished-at="2014-07-08T10:55:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void qa.tests.MyTest.testSample1(qa.test.TestParameters)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@3d8c7aca]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testData -->
+        <test-method status="PASS" signature="testData(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:qa.tests.MyTest@35851384]" test-instance-name="testSample3()" name="testData" is-config="true" duration-ms="0" started-at="2014-07-08T10:55:56Z" finished-at="2014-07-08T10:55:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void qa.tests.MyTest.testSample2(qa.test.TestParameters)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@5ebec15]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testData -->
+        <test-method status="PASS" signature="testData(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:qa.tests.MyTest@35851384]" test-instance-name="testSample3()" name="testData" is-config="true" duration-ms="0" started-at="2014-07-08T10:55:56Z" finished-at="2014-07-08T10:55:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void qa.tests.MyTest.testSample2(qa.test.TestParameters)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@21bcffb5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testData -->
+        <test-method status="PASS" signature="testData(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:qa.tests.MyTest@35851384]" test-instance-name="testSample3()" name="testData" is-config="true" duration-ms="0" started-at="2014-07-08T10:55:56Z" finished-at="2014-07-08T10:55:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void qa.tests.MyTest.testSample2(qa.test.TestParameters)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@380fb434]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testData -->
+        <test-method status="PASS" signature="testSample2(qa.test.TestParameters)[pri:0, instance:qa.tests.MyTest@35851384]" test-instance-name="testSample3()" name="testSample2" duration-ms="0" started-at="2014-07-08T10:55:56Z" data-provider="BasicDataProvider" finished-at="2014-07-08T10:55:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[qa.test.TestParameters@5b464ce8]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSample2 -->
+        <test-method status="PASS" signature="testSample2(qa.test.TestParameters)[pri:0, instance:qa.tests.MyTest@35851384]" test-instance-name="testSample3()" name="testSample2" duration-ms="0" started-at="2014-07-08T10:55:56Z" data-provider="BasicDataProvider" finished-at="2014-07-08T10:55:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[qa.test.TestParameters@340f438e]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSample2 -->
+        <test-method status="PASS" signature="testSample2(qa.test.TestParameters)[pri:0, instance:qa.tests.MyTest@35851384]" test-instance-name="testSample3()" name="testSample2" duration-ms="0" started-at="2014-07-08T10:55:56Z" data-provider="BasicDataProvider" finished-at="2014-07-08T10:55:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[qa.test.TestParameters@30c7da1e]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSample2 -->
+        <test-method status="PASS" signature="testData(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:qa.tests.MyTest@35851384]" test-instance-name="testSample3()" name="testData" is-config="true" duration-ms="1" started-at="2014-07-08T10:55:56Z" finished-at="2014-07-08T10:55:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void qa.tests.MyTest.testSample2(qa.test.TestParameters)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@668bc3d5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testData -->
+        <test-method status="PASS" signature="testSample2(qa.test.TestParameters)[pri:0, instance:qa.tests.MyTest@35851384]" test-instance-name="testSample3()" name="testSample2" duration-ms="0" started-at="2014-07-08T10:55:56Z" data-provider="BasicDataProvider" finished-at="2014-07-08T10:55:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[qa.test.TestParameters@57829d67]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSample2 -->
+        <test-method status="PASS" signature="testSample2(qa.test.TestParameters)[pri:0, instance:qa.tests.MyTest@35851384]" test-instance-name="testSample3()" name="testSample2" duration-ms="0" started-at="2014-07-08T10:55:56Z" data-provider="BasicDataProvider" finished-at="2014-07-08T10:55:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[qa.test.TestParameters@19dfb72a]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSample2 -->
+        <test-method status="PASS" signature="testData(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:qa.tests.MyTest@35851384]" test-instance-name="testSample3()" name="testData" is-config="true" duration-ms="1" started-at="2014-07-08T10:55:56Z" finished-at="2014-07-08T10:55:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void qa.tests.MyTest.testSample3()]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@3cda1055]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testData -->
+        <test-method status="PASS" signature="testData(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:qa.tests.MyTest@35851384]" test-instance-name="testSample3()" name="testData" is-config="true" duration-ms="0" started-at="2014-07-08T10:55:56Z" finished-at="2014-07-08T10:55:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void qa.tests.MyTest.testSample2(qa.test.TestParameters)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@7a5d012c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testData -->
+        <test-method status="PASS" signature="testSample3()[pri:0, instance:qa.tests.MyTest@35851384]" test-instance-name="testSample3()" name="testSample3" duration-ms="0" started-at="2014-07-08T10:55:56Z" finished-at="2014-07-08T10:55:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSample3 -->
+      </class> <!-- qa.tests.MyTest -->
+    </test> <!-- Main Test Group -->
+  </suite> <!-- Main Test Suite -->
+</testng-results>
