@@ -6,15 +6,15 @@ import org.testng.ITest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+import static org.testng.Assert.*;
 
 import qa.test.TestParameters;
 
 public class MyTest implements ITest
 {
-    // Has to be set to prevent NullPointerException from reporters
-    protected String mTestCaseName = "";
+    protected String mTestCaseName = new String(); // must not be null
 
-    @DataProvider(name="BasicDataProvider")
+    @DataProvider( name="dp" )
     public Object[][] getTestData() {
         Object[][] data = new Object[][] {
                 { new TestParameters("TestCase1", "Sample test 1")},
@@ -29,7 +29,7 @@ public class MyTest implements ITest
     @BeforeMethod( alwaysRun = true )
     public void testData( Method method, Object[] testData ) {
         String testCase = "";
-        if (testData != null && testData.length > 0) {
+        if ( testData != null && testData.length > 0 ) {
             TestParameters testParams = null;
             //Check if test method has actually received required parameters
             for ( Object testParameter : testData ) {
@@ -42,7 +42,7 @@ public class MyTest implements ITest
                 testCase = testParams.getTestName();
             }
         }
-        this.mTestCaseName = String.format("%s(%s)", method.getName(), testCase);
+        this.mTestCaseName = String.format( "%s(%s)", method.getName(), testCase );
         //this.mTestCaseName = testCase;
     }
 
@@ -51,19 +51,19 @@ public class MyTest implements ITest
         return this.mTestCaseName;
     }
 
-    @Test( dataProvider="BasicDataProvider" )
+    @Test( dataProvider="dp" )
     public void testSample1( TestParameters testParams ){
-        //test code here
+        assertTrue( true );
     }
 
-    @Test(dataProvider="BasicDataProvider")
+    @Test( dataProvider="dp" )
     public void testSample2( TestParameters testParams ){
-        //test code here
+    	assertTrue( true );
     }
 
     @Test
     public void testSample3(){
-        //test code here
+    	assertTrue( true );
     }
 
 }
