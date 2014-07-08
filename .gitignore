@@ -34,3 +34,13 @@ Icon
 # Files that might appear on external disk
 .Spotlight-V100
 .Trashes
+
+# Unit test output directories
+target/
+test-output/
+
+# IDE files
+.settings/
+.classpath
+.idea/
+*.iml
