@@ -1,69 +1,51 @@
 package qa.tests;
 
-import java.lang.reflect.Method;
+import java.util.Set;
 
-import org.testng.ITest;
-import org.testng.annotations.BeforeMethod;
+import org.testng.ITestContext;
+import org.testng.Reporter;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+
 import static org.testng.Assert.*;
 
-import qa.test.TestParameters;
-
-public class MyTest implements ITest
+public class MyTest
 {
-    protected String mTestCaseName = new String(); // must not be null
-
-    @DataProvider( name="dp" )
+	
+    @DataProvider( name = "dp" )
     public Object[][] getTestData() {
         Object[][] data = new Object[][] {
-                { new TestParameters("TestCase1", "Sample test 1")},
-                { new TestParameters("TestCase2", "Sample test 2")},
-                { new TestParameters("TestCase3", "Sample test 3")},
-                { new TestParameters("TestCase4", "Sample test 4")},
-                { new TestParameters("TestCase5", "Sample test 5") }
+                { 1, "TestCase1", "Sample test 1" },
+                { 2, "TestCase2", "Sample test 2" },
+                { 3, "TestCase3", "Sample test 3" },
+                { 4, "TestCase4", "Sample test 4" },
+                { 5, "TestCase5", "Sample test 5" }
         };
         return data;
     }
 
-    @BeforeMethod( alwaysRun = true )
-    public void testData( Method method, Object[] testData ) {
-        String testCase = "";
-        if ( testData != null && testData.length > 0 ) {
-            TestParameters testParams = null;
-            //Check if test method has actually received required parameters
-            for ( Object testParameter : testData ) {
-                if ( testParameter instanceof TestParameters ) {
-                    testParams = (TestParameters)testParameter;
-                    break;
-                }
-            }
-            if ( testParams != null ) {
-                testCase = testParams.getTestName();
-            }
-        }
-        //this.mTestCaseName = String.format( "%s(%s)", method.getName(), testCase );
-        this.mTestCaseName = String.format( "%s", testCase );
-    }
-
-    @Override
-    public String getTestName() {
-        return this.mTestCaseName;
-    }
-
-    @Test( dataProvider="dp" )
-    public void testSample1( TestParameters testParams ){
+    @Test( dataProvider = "dp" )
+    public void testSample1( int num, String name, String desc, ITestContext ctx ) {
+    	ctx.setAttribute( "testName" + num, name );
+    	ctx.setAttribute( "testDesc" + num, desc );
         assertTrue( true );
     }
 
-    @Test( dataProvider="dp" )
-    public void testSample2( TestParameters testParams ){
+    @Test( dataProvider = "dp" )
+    public void testSample2( int num, String name, String desc, ITestContext ctx ) {
+    	ctx.setAttribute( "testName" + num, name );
+    	ctx.setAttribute( "testDesc" + num, desc );
     	assertTrue( true );
     }
-
-    @Test
-    public void testSample3(){
-    	assertTrue( true );
+    
+    @AfterTest
+    public void printIt( ITestContext ctx ) {
+    	Set<String> attNames = ctx.getAttributeNames();
+    	for ( String x : attNames ) {
+    	     Reporter.log( "ITESTCONTEXT - KEY: " + x + " VAL: " + ctx.getAttribute( x ), true );
+    	}
     }
 
 }

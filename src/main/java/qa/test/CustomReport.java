@@ -398,15 +398,15 @@ public class CustomReport implements IReporter {
         // Write test parameters (if any)
         Object[] parameters = result.getParameters();
         int parameterCount = (parameters == null ? 0 : parameters.length);
-        if (parameterCount > 0) {
+        if ( parameterCount > 0 ) {
             writer.print("<tr class=\"param\">");
-            for (int i = 1; i <= parameterCount; i++) {
+            for ( int i = 1; i <= parameterCount; i++ ) {
                 writer.print("<th>Parameter #");
                 writer.print(i);
                 writer.print("</th>");
             }
             writer.print("</tr><tr class=\"param stripe\">");
-            for (Object parameter : parameters) {
+            for ( Object parameter : parameters ) {
                 writer.print("<td>");
                 writer.print( Utils.escapeHtml( Utils.toString( parameter, Object.class ) ) );
                 writer.print("</td>");
@@ -416,7 +416,7 @@ public class CustomReport implements IReporter {
 
         // Write reporter messages (if any)
         List<String> reporterMessages = Reporter.getOutput(result);
-        if (!reporterMessages.isEmpty()) {
+        if ( !reporterMessages.isEmpty() ) {
             writer.print("<tr><th");
             if (parameterCount > 1) {
                 writer.print(" colspan=\"");
@@ -426,7 +426,7 @@ public class CustomReport implements IReporter {
             writer.print(">Messages</th></tr>");
 
             writer.print("<tr><td");
-            if (parameterCount > 1) {
+            if ( parameterCount > 1 ) {
                 writer.print(" colspan=\"");
                 writer.print(parameterCount);
                 writer.print("\"");
@@ -438,9 +438,9 @@ public class CustomReport implements IReporter {
 
         // Write exception (if any)
         Throwable throwable = result.getThrowable();
-        if (throwable != null) {
+        if ( throwable != null ) {
             writer.print("<tr><th");
-            if (parameterCount > 1) {
+            if ( parameterCount > 1 ) {
                 writer.print(" colspan=\"");
                 writer.print(parameterCount);
                 writer.print("\"");
@@ -451,7 +451,7 @@ public class CustomReport implements IReporter {
             writer.print("</th></tr>");
 
             writer.print("<tr><td");
-            if (parameterCount > 1) {
+            if ( parameterCount > 1 ) {
                 writer.print(" colspan=\"");
                 writer.print(parameterCount);
                 writer.print("\"");
@@ -469,10 +469,10 @@ public class CustomReport implements IReporter {
         writer.print("<div class=\"messages\">");
         Iterator<String> iterator = reporterMessages.iterator();
         assert iterator.hasNext();
-        writer.print(Utils.escapeHtml(iterator.next()));
+        writer.print( Utils.escapeHtml( iterator.next() ) );
         while (iterator.hasNext()) {
             writer.print("<br/>");
-            writer.print(Utils.escapeHtml(iterator.next()));
+            writer.print( Utils.escapeHtml( iterator.next() ) );
         }
         writer.print("</div>");
     }
@@ -547,8 +547,8 @@ public class CustomReport implements IReporter {
 
         public SuiteResult(ISuite suite) {
             suiteName = suite.getName();
-            for (ISuiteResult suiteResult : suite.getResults().values()) {
-                testResults.add(new TestResult(suiteResult.getTestContext()));
+            for ( ISuiteResult suiteResult : suite.getResults().values() ) {
+                testResults.add( new TestResult( suiteResult.getTestContext() ) );
             }
         }
 
@@ -573,14 +573,13 @@ public class CustomReport implements IReporter {
          * Orders test results by class name and then by method name (in
          * lexicographic order).
          */
-        protected static final Comparator<ITestResult> RESULT_COMPARATOR = new Comparator<ITestResult>() {
+        protected static final Comparator<ITestResult> RESULT_COMPARATOR = new Comparator<ITestResult>() 
+        {
             @Override
-            public int compare(ITestResult o1, ITestResult o2) {
-                int result = o1.getTestClass().getName()
-                        .compareTo(o2.getTestClass().getName());
+            public int compare( ITestResult o1, ITestResult o2 ) {
+                int result = o1.getTestClass().getName().compareTo(o2.getTestClass().getName());
                 if (result == 0) {
-                    result = o1.getMethod().getMethodName()
-                            .compareTo(o2.getMethod().getMethodName());
+                    result = o1.getMethod().getMethodName().compareTo(o2.getMethod().getMethodName());
                 }
                 return result;
             }
